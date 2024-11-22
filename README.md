@@ -3,7 +3,10 @@ Computation of minimal disturbances for desynchronisation in the swing equation 
 
 ## power_grid_DAL.m
 Usage: [y0,gains,resids] = power_grid_DAL(E0,T,G,alpha,Ps,K,th0s,y0)
-Searches for optimally growing initial conditions over a time T of energy E0 in the vicinity of initial condition y0, in the graph G with parameters alpha (damping coefficient) and K (coupling strength). The distribution of power in the grid is Ps. The steady state (synchronised) phases at each node are inputted as th0s.
+
+Searches for optimally growing initial conditions over a time T of energy E0 in the vicinity of initial condition y0, in the graph G with parameters alpha (damping coefficient) and K (coupling strength). The distribution of power in the grid is Ps. 
+
+The steady state (synchronised) phases at each node are inputted as th0s.
 Outputs a new initial condition y0 along with a list of gains (kinetic energy at time T) and residuals for each initial condition considered during the iteration.
 
 ## autoDAL.m
